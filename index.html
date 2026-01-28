@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Private</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background: #0d0d0d;
+      color: white;
+      font-family: Arial;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .box {
+      width: 90%;
+      max-width: 400px;
+      text-align: center;
+    }
+    input, button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+    button {
+      background: #ff4d6d;
+      color: white;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="box">
+  <h2>Enter Password</h2>
+  <input type="password" id="pass" placeholder="Password">
+  <button onclick="check()">Enter</button>
+  <p id="error"></p>
+</div>
+
+<input type="password" id="pass" placeholder="If you still remember... class party er din tmr piche amr nam jeta disila, oitai password sob choto hater and nil er por space ache">
+
+::placeholder {
+  color: #ff4d6d;
+}
+
+<script>
+  function check() {
+    if (document.getElementById("pass").value === "nil sotru") {
+      document.body.innerHTML = `
+        <div class="box">
+          <h2>For You ❤️</h2>
+          <p>
+            Ami jani to tmr bf nai, bisshash o kori! jaihok, egula o ar bolbo SSSOOOOORRRRYYY JJEEELLLIIINNNN 
+            please unblock me as fast as possible.  
+            Jano na tmk chara thakte pari na? amr poralekha o hocche na kintu! so, come back, as fast as possible.
+            Your loving, Nil sotru.
+          </p>
+        </div>`;
+    } else {
+      document.getElementById("error").innerText = "Wrong password.";
+    }
+  }
+</script>
+
+</body>
+</html>
